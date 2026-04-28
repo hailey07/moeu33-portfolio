@@ -113,7 +113,7 @@ body.creative-landing {
     position: fixed;
     right: 0;
     bottom: 0;
-    height: 80vh; /* 高度占据屏幕80%，按比例自适应 */
+    height: 30vh; /* 高度占据屏幕80%，按比例自适应 */
     object-fit: contain;
     z-index: 10;
     pointer-events: none; /* 鼠标事件穿透，避免遮挡右侧可能的点击 */
