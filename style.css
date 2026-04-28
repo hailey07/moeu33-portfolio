@@ -142,34 +142,34 @@ body.creative-landing {
 .contact-bar-1 {
     display: flex;
    /* font-family: 'TsangerMinghei', sans-serif; */
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     width: fit-content;
     border: 2px solid #000; 
     box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
-    margin-top:18px;
+    margin-top:24px;
     margin-left: 50px;
 }
 .contact-bar-2 {
     display: flex;
    /* font-family: 'TsangerMinghei', sans-serif; */
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     width: fit-content;
     border: 2px solid #000; 
     box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
-    margin-top:18px;
+    margin-top:24px;
     margin-left: 100px;
 }
 .contact-bar-3 {
     display: flex;
    /* font-family: 'TsangerMinghei', sans-serif; */
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     width: fit-content;
     border: 2px solid #000; 
     box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
-    margin-top:18px;
+    margin-top:24px;
     margin-left: 150px;
 }
 .contact-tel {
