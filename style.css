@@ -77,3 +77,112 @@
     border-color: var(--md-cyan);
     box-shadow: 2px 2px 0 0 var(--border-color);
 }
+
+/* ==================== 创意首页排版 (Creative Landing) ==================== */
+body.creative-landing {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff; /* 纯白底色 */
+    overflow: hidden; /* 隐藏滚动条，呈现画框感 */
+    display: flex;
+    align-items: center;
+}
+
+/* 顶部黑色横幅：固定定位 */
+.fixed-top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 12px 0;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 9999; /* 保证在最顶层 */
+}
+
+/* 右侧卡通人物：固定定位 */
+.fixed-character-img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 80vh; /* 高度占据屏幕80%，按比例自适应 */
+    object-fit: contain;
+    z-index: 10;
+    pointer-events: none; /* 鼠标事件穿透，避免遮挡右侧可能的点击 */
+}
+
+/* 左侧内容区布局 */
+.landing-content {
+    position: relative;
+    z-index: 20;
+    margin-left: 8vw; /* 左侧留白 */
+    margin-top: 40px; /* 避开顶部的黑色横幅 */
+}
+
+/* 超大标题名 */
+.huge-title {
+    font-family: 'ChillDINGothic', sans-serif; /* 使用你引入的粗黑体 */
+    font-size: 14vw; /* 字体大小随屏幕宽度动态变化 */
+    font-weight: 900;
+    color: #222222;
+    margin: 0 0 40px 0;
+    line-height: 1;
+    letter-spacing: 0.05em;
+}
+
+/* 电话邮箱色块 */
+.contact-bar {
+    display: flex;
+    font-family: 'TsangerMinghei', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: fit-content;
+    border: 2px solid #000; /* 添加硬朗的边框 */
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,1); /* 波普风硬阴影 */
+}
+
+.contact-tel {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+}
+
+.contact-email {
+    background-color: #fce146; /* 图片中的明黄色 */
+    color: #000000;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+}
+
+/* === 移动端适配 === */
+@media (max-width: 768px) {
+    .huge-title {
+        font-size: 22vw;
+    }
+    
+    .contact-bar {
+        flex-direction: column; /* 手机上改为上下排列 */
+        font-size: 16px;
+    }
+    
+    .fixed-character-img {
+        height: 50vh; /* 手机上缩小图片 */
+        right: -30px;
+        bottom: -20px;
+        opacity: 0.85; /* 稍微降低透明度以免过于抢夺视觉重点 */
+    }
+    
+    .fixed-top-banner {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
