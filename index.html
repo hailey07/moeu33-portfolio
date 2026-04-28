@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoeU33 | 创作集</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5109131_wfhaps8fl5.css">
+    <link rel="icon" href="assets/Favicon.png" type="image/png">
+</head>
+<body class="portfolio-mode">
+    <header class="navbar">
+        <div class="top-announcement">
+            <div class="howtotext">
+                <span class="see-here">ᴇxᴘʟᴏʀᴇ ➜</span>
+                <div class="index-topbar-btn">
+                    <a href="https://moho.moeu33.fun" class="index-topbar-link">Moho 脚本站</a>
+                    <a href="#" class="index-topbar-link">文学创作</a>
+                    <a href="#" class="index-topbar-link">关于我</a>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()"></button>
+        </div>
+        
+        <div class="title-area">
+            <h1>
+                <img src="assets/Favicon.png" class="index-logo" alt="Logo">
+                <span>MoeU33 Portfolio</span>
+            </h1>
+            <h2>—— 沉淀创作，记录在喧嚣之外的思考 ——</h2>
+        </div>
+    </header>
+
+    <main id="content">
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="novel">小说/文学</button>
+            <button class="filter-btn" data-filter="script">技术/脚本</button>
+            <button class="filter-btn" data-filter="design">设计/排版</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-container">
+            <div class="portfolio-item novel">
+                <a href="#" class="portfolio-card color-orange">
+                    <div class="item-image" style="background-image: url('assets/novel_1986.jpg');"></div>
+                    <div class="item-info">
+                        <span class="tag-badge tag-orange">小说</span>
+                        <h3>1986：时代的回响</h3>
+                        <p>关于叶陈安与那个风云变幻年代的长篇叙事。</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="portfolio-item script">
+                <a href="https://moho.moeu33.fun" class="portfolio-card color-blue">
+                    <div class="item-image" style="background-image: url('assets/moho_scripts.jpg');"></div>
+                    <div class="item-info">
+                        <span class="tag-badge tag-blue">Moho库</span>
+                        <h3>Moho 脚本资源站</h3>
+                        <p>为动画师打造的工具集成空间，涵盖自动化与绑定脚本。</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="portfolio-item design">
+                <a href="#" class="portfolio-card color-teal">
+                    <div class="item-image" style="background-image: url('assets/typography.jpg');"></div>
+                    <div class="item-info">
+                        <span class="tag-badge tag-green">排版</span>
+                        <h3>中英混排研究</h3>
+                        <p>关于 Maple Mono 与 Chill 系列字体的视觉适配实验。</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="copyright">
+        ©️ 2026 by MoeU33 | ʙᴇ ᴛʀᴀɴǫᴜɪʟ, ʙᴇ ᴄʀᴇᴀᴛɪᴠᴇ.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* 基于你提供的变量进行扩展 */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: var(--border-line-width) solid var(--border-color);
+    border-radius: 12px;
+    background: var(--card-bg);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.item-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: var(--border-line-width) solid var(--border-color);
+    background-color: var(--script-icon-bg);
+}
+
+.item-info {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.item-info h3 {
+    margin: 12px 0 8px 0;
+    font-size: var(--fs-listing-h2);
+    color: var(--text-main);
+    font-family: "TsangerMinghei", sans-serif;
+}
+
+.item-info p {
+    font-size: var(--fs-card-meta);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* 继承你的 Hover 动画逻辑 */
+@media (hover: hover) {
+    .portfolio-card:hover {
+        transform: var(--btn-xy-move);
+        box-shadow: var(--btn-xy-shadow);
+    }
+}
+
+/* 分类过滤按钮样式 */
+.portfolio-filter {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: var(--border-line-width) solid var(--border-color);
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--text-light);
+    transition: all 0.2s;
+}
+
+.filter-btn.active {
+    background: var(--md-cyan);
+    color: white;
+    border-color: var(--md-cyan);
+    box-shadow: 2px 2px 0 0 var(--border-color);
+}
