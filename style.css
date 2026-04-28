@@ -111,9 +111,9 @@ body.creative-landing {
 /* 右侧卡通人物：固定定位 */
 .fixed-character-img {
     position: fixed;
-    right: -30px;
+    right: -50px;
     bottom: 0;
-    height: 60vh; /* 高度占据屏幕80%，按比例自适应 */
+    height: 45vh; /* 高度占据屏幕80%，按比例自适应 */
     object-fit: contain;
     z-index: 10;
     pointer-events: none; /* 鼠标事件穿透，避免遮挡右侧可能的点击 */
